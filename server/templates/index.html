@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>myhttpchat - Server</title>
+</head>
+<body>
+    <ul>
+    {% for session in vm.sessions %}
+        <li>{{ session.username }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

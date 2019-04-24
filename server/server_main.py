@@ -21,11 +21,11 @@ from model.sessions import Session, MAX_SESSION_AGE
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
+def index():
     vm = {
-        "name" : "Matt"
+        "sessions" : _sessions
     }
-    return render_template('main.html', vm=vm)
+    return render_template('index.html', vm=vm)
 
 ### SESSION MGMT ###
 
